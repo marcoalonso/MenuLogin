@@ -13,9 +13,11 @@
 		60AE97C7283AF76B0057E329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE97C5283AF76B0057E329 /* Main.storyboard */; };
 		60AE97C9283AF76E0057E329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AE97C8283AF76E0057E329 /* Assets.xcassets */; };
 		60AE97CC283AF76E0057E329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE97CA283AF76E0057E329 /* LaunchScreen.storyboard */; };
+		DC94E84C12BFB3CF2294C578 /* Pods_MenuFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19880B45F9D04722CBE1242 /* Pods_MenuFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0E745B0A87C1EED92BF665 /* Pods-MenuFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuFirebase.release.xcconfig"; path = "Target Support Files/Pods-MenuFirebase/Pods-MenuFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		60AE97BC283AF76B0057E329 /* MenuFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE97BF283AF76B0057E329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AE97C1283AF76B0057E329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		60AE97C8283AF76E0057E329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60AE97CB283AF76E0057E329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60AE97CD283AF76E0057E329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19880B45F9D04722CBE1242 /* Pods_MenuFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB14F029FD048655950CEC64 /* Pods-MenuFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuFirebase.debug.xcconfig"; path = "Target Support Files/Pods-MenuFirebase/Pods-MenuFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC94E84C12BFB3CF2294C578 /* Pods_MenuFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57503429DED68AD5DBBE5FCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB14F029FD048655950CEC64 /* Pods-MenuFirebase.debug.xcconfig */,
+				3C0E745B0A87C1EED92BF665 /* Pods-MenuFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		60AE97B3283AF76B0057E329 = {
 			isa = PBXGroup;
 			children = (
 				60AE97BE283AF76B0057E329 /* MenuFirebase */,
 				60AE97BD283AF76B0057E329 /* Products */,
+				57503429DED68AD5DBBE5FCB /* Pods */,
+				FDB0A2A31AC6608857575BA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = MenuFirebase;
 			sourceTree = "<group>";
 		};
+		FDB0A2A31AC6608857575BA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D19880B45F9D04722CBE1242 /* Pods_MenuFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60AE97D0283AF76E0057E329 /* Build configuration list for PBXNativeTarget "MenuFirebase" */;
 			buildPhases = (
+				07260BAD887EFF2EC5B42E78 /* [CP] Check Pods Manifest.lock */,
 				60AE97B8283AF76B0057E329 /* Sources */,
 				60AE97B9283AF76B0057E329 /* Frameworks */,
 				60AE97BA283AF76B0057E329 /* Resources */,
+				B9B3DBAEEC3E12BFC9BD409F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07260BAD887EFF2EC5B42E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B3DBAEEC3E12BFC9BD409F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenuFirebase/Pods-MenuFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenuFirebase/Pods-MenuFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MenuFirebase/Pods-MenuFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60AE97B8283AF76B0057E329 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		60AE97D1283AF76E0057E329 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB14F029FD048655950CEC64 /* Pods-MenuFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		60AE97D2283AF76E0057E329 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0E745B0A87C1EED92BF665 /* Pods-MenuFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

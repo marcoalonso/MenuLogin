@@ -6,12 +6,23 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mensajeBienvenidaLabel: CLTypingLabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mensajeBienvenidaLabel.text = "Bienvenidos al Instituto Tecnologico de Morelia 🏫 "
+        
+        mensajeBienvenidaLabel.charInterval = 0.03
+        
+        mensajeBienvenidaLabel.onTypingAnimationFinished = {
+            print("Mostrar algo!")
+        }
     }
 
 
